@@ -64,7 +64,7 @@ class SurveyViewModel(
     // ----- Survey status exposed as State -----
 
     private val _surveyScreenData = mutableStateOf(createSurveyScreenData())
-    val surveyScreenData: SurveyScreenData?
+    val surveyScreenData: SurveyScreenData
         get() = _surveyScreenData.value
 
     private val _isNextEnabled = mutableStateOf(false)
